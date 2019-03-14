@@ -62,7 +62,7 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
@@ -79,7 +79,7 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
@@ -96,7 +96,7 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button

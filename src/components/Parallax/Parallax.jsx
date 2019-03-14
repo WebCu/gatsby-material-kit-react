@@ -12,7 +12,7 @@ import parallaxStyle from "assets/jss/material-kit-react/components/parallaxStyl
 class Parallax extends React.Component {
   constructor(props) {
     super(props);
-    var windowScrollTop = window.pageYOffset / 3;
+    var windowScrollTop = typeof window !== 'undefined' && window.pageYOffset / 3;
     this.state = {
       transform: "translate3d(0," + windowScrollTop + "px,0)"
     };
@@ -26,10 +26,10 @@ class Parallax extends React.Component {
     window.addEventListener("scroll", this.resetTransform);
   }
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.resetTransform);
+    typeof window !== 'undefined' && window.removeEventListener("scroll", this.resetTransform);
   }
   resetTransform() {
-    var windowScrollTop = window.pageYOffset / 3;
+    var windowScrollTop = typeof window !== 'undefined' && window.pageYOffset / 3;
     this.setState({
       transform: "translate3d(0," + windowScrollTop + "px,0)"
     });

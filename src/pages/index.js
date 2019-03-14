@@ -1,5 +1,5 @@
 import React from "react";
-import {createBrowserHistory} from "history";
+import {createMemoryHistory} from "history";
 import {Route, Router, Switch} from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.4.0";
@@ -11,7 +11,7 @@ import LandingPage from "./LandingPage/LandingPage.jsx";
 import ProfilePage from "./ProfilePage/ProfilePage.jsx";
 import LoginPage from "./LoginPage/LoginPage.jsx";
 
-var hist = createBrowserHistory();
+let hist = createMemoryHistory();
 
 export default () => (
   <Router history={hist}>
