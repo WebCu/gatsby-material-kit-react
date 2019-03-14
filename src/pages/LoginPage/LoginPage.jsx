@@ -6,9 +6,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 import LockOutlined from "@material-ui/icons/LockOutlined";
-// FortAwesome icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 // React icons
 import {FaFacebook, FaTwitter, FaGooglePlusG } from 'react-icons/fa';
 // core components
