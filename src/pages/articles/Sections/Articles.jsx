@@ -23,7 +23,7 @@ class SectionBasics extends React.Component {
       "",
     ]
 
-    const { classes, title = "暂无标题", tag, time = "时间" } = this.props
+    const { classes, title = "暂无标题", tag = "", time = "时间" } = this.props
     return (
       <div className={classes.sections} style={{ padding: "20px 0" }}>
         <div className={classes.container}>
