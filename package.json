@@ -36,6 +36,7 @@
     "react-helmet": "^5.2.0",
     "react-icon": "^1.0.0",
     "react-icons": "^3.5.0",
+    "react-request": "^3.1.2",
     "react-router-dom": "^4.3.1",
     "react-slick": "^0.23.2",
     "react-swipeable-views": "^0.13.1",
