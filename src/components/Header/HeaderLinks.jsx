@@ -94,15 +94,16 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem> */}
       <ListItem className={classes.listItem}>
-        <Button
-          href="/images"
+        <Link
+          to="/images-page"
           color="transparent"
           // target="_blank"
           className={classes.navLink}
         >
           <InsertPhoto className={classes.icons} /> 影集
-        </Button>
+        </Link>
       </ListItem>
+
       {/* <ListItem className={classes.listItem}>
         <Button
           href="https://google.com"
