@@ -95,7 +95,7 @@ function HeaderLinks({ ...props }) {
       </ListItem> */}
       <ListItem className={classes.listItem}>
         <Link
-          to="/images-page"
+          to="/images"
           color="transparent"
           // target="_blank"
           className={classes.navLink}
