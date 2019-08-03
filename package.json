@@ -23,6 +23,7 @@
     "core-js": "^2.6.5",
     "gatsby": "^2.1.24",
     "gatsby-plugin-manifest": "^2.0.22",
+    "gatsby-plugin-material-ui": "1.2.5",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.8",
     "gatsby-plugin-resolve-src": "^2.0.0",
