@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // core components
-import Header from "components/Header/Header.jsx";
+  import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -30,6 +30,8 @@ import SectionDownload from "./Sections/SectionDownload.jsx";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
+import bg4 from "assets/img/bg4.jpg";
+
 class Components extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -46,7 +48,7 @@ class Components extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={bg4}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>

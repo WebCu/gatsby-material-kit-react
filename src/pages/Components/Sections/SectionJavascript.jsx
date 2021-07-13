@@ -1,6 +1,6 @@
 import React from "react";
 // react plugin for creating date-time-picker
-import Datetime from "react-datetime";
+//import Datetime from "react-datetime";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Slide from "@material-ui/core/Slide";
@@ -10,7 +10,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 import InputLabel from "@material-ui/core/InputLabel";
-import FormControl from "@material-ui/core/FormControl";
+//import FormControl from "@material-ui/core/FormControl";
 import Tooltip from "@material-ui/core/Tooltip";
 import Popover from "@material-ui/core/Popover";
 // @material-ui/icons
@@ -156,11 +156,15 @@ class SectionJavascript extends React.Component {
                       Datetime Picker
                     </InputLabel>
                     <br />
+                    {
+                      /*
                     <FormControl fullWidth>
                       <Datetime
                         inputProps={{ placeholder: "Datetime Picker Here" }}
                       />
                     </FormControl>
+                       */
+                    }
                   </GridItem>
                 </GridContainer>
               </GridItem>
