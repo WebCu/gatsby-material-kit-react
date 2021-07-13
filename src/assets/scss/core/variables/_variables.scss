@@ -3,6 +3,8 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+@use "sass:math";
+
 //Font
 $fa-font-path: "core/fontawesome" !default;
 $fa-font-display: auto !default;
@@ -272,7 +274,7 @@ $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
-$headings-margin-bottom: ($spacer / 2) !default;
+$headings-margin-bottom: math.div($spacer, 2) !default;
 $headings-font-family: inherit !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
@@ -635,7 +637,7 @@ $nav-pills-link-active-bg: $component-active-bg !default;
 
 // Navbar
 
-$navbar-padding-y: ($spacer / 2) !default;
+$navbar-padding-y: math.div($spacer, 2) !default;
 $navbar-padding-x: $spacer !default;
 
 $navbar-nav-link-padding-x: 0.5rem !default;
@@ -646,7 +648,7 @@ $nav-link-height: (
   $font-size-base * $line-height-base + $nav-link-padding-y * 2
 ) !default;
 $navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
-$navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) / 2 !default;
+$navbar-brand-padding-y: math.div(($nav-link-height - $navbar-brand-height), 2) !default;
 
 $navbar-toggler-padding-y: 0.25rem !default;
 $navbar-toggler-padding-x: 0.75rem !default;
@@ -724,7 +726,7 @@ $card-bg: $white !default;
 
 $card-img-overlay-padding: 1.25rem !default;
 
-$card-group-margin: ($grid-gutter-width / 2) !default;
+$card-group-margin: math.div($grid-gutter-width, 2) !default;
 $card-deck-margin: $card-group-margin !default;
 
 $card-columns-count: 3 !default;

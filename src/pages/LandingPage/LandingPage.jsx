@@ -20,12 +20,16 @@ import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
+import landingBg from "assets/img/landing-bg.jpg";
+
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = [];
+
+
 
 class LandingPage extends React.Component {
   render() {
@@ -44,7 +48,7 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={landingBg}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>

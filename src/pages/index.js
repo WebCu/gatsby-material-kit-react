@@ -13,13 +13,15 @@ import LoginPage from "./LoginPage/LoginPage.jsx";
 
 let hist = createMemoryHistory();
 
-export default () => (
-  <Router history={hist}>
-    <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
-    </Switch>
-  </Router>
-);
+export default function Index() {
+  return (
+    <Router history={hist}>
+      <Switch>
+        <Route path="/landing-page" component={LandingPage} />
+        <Route path="/profile-page" component={ProfilePage} />
+        <Route path="/login-page" component={LoginPage} />
+        <Route path="/" component={Components} />
+      </Switch>
+    </Router>
+  )
+}
